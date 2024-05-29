@@ -1,0 +1,44 @@
+heat:
+  longname: Surface heat flux (W/m2)
+  vartype: scalar
+  varname: wbsfc
+  scale_factor: -1.
+  outname: heat_flux.dat
+momentum:
+  longname: Momentum flux (N/m2)
+  vartype: vector
+  varnamex: tau_x
+  varnamey: tau_y
+  outname: momentum_flux.dat
+u10:
+  longname: 10-meter wind (m/s)
+  vartype: vector
+  varnamex: u10
+  varnamey: v10
+  outname: u10.dat
+us0:
+  longname: Surface Stokes drift velocity (m/s)
+  vartype: vector
+  varnamex: us_surf
+  varnamey: vs_surf
+  scale_factor: 0.01 # cm/s -> m/s
+  outname: us0.dat
+t_prof:
+  longname: Temperature profile (degC)
+  vartype: scalar
+  varname: TEMP
+  outname: t_prof.dat
+vel_prof:
+  longname: Velocity profile (m/s)
+  vartype: vector
+  varnamex: UVEL
+  varnamey: VVEL
+  scale_factor: 0.01 # cm/s -> m/s
+  outname: vel_prof.dat
+us_prof:
+  longname: Stokes drift velocity profile (m/s)
+  vartype: vector
+  varnamex: USTKS
+  varnamey: VSTKS
+  scale_factor: 0.01 # cm/s -> m/s
+  outname: us_prof.dat
